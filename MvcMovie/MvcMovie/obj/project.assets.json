@@ -12537,11 +12537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marce\\Documents\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
+      "projectUniqueName": "C:\\RepoGH\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
       "projectName": "MvcMovie",
-      "projectPath": "C:\\Users\\Marce\\Documents\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
+      "projectPath": "C:\\RepoGH\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
       "packagesPath": "C:\\Users\\Marce\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marce\\Documents\\MvcMovie\\MvcMovie\\obj\\",
+      "outputPath": "C:\\RepoGH\\MvcMovie\\MvcMovie\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12555,6 +12555,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://packagesource": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

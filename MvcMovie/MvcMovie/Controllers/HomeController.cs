@@ -26,7 +26,7 @@ namespace MvcMovie.Controllers
         }
         public IActionResult Admin()
         {
-            ViewData["Message"] = "Test in action";
+            ViewData["Message"] = "Ingrese producto";
 
             return View();
         }
