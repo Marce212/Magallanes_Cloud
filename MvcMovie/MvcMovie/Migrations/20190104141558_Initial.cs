@@ -2,34 +2,34 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MvcMovie.Migrations
+namespace MvcProduct.Migrations
 {
     public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Movies",
+                name: "Products",
                 columns: table => new
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Title = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
                     ReleaseDate = table.Column<DateTime>(nullable: false),
-                    Genre = table.Column<string>(nullable: true),
+                    Type = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(type: "decimal(18, 2)", nullable: false),
-                    Rating = table.Column<string>(nullable: true)
+                    Quality = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Movies", x => x.ID);
+                    table.PrimaryKey("PK_Products", x => x.ID);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Movies");
+                name: "Products");
         }
     }
 }

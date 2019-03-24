@@ -4,10 +4,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
 using Microsoft.EntityFrameworkCore;
-using MvcMovie.Models;
-using MvcMovie;
+using MvcProduct.Models;
+using MvcProduct;
 
-namespace MvcMovie
+namespace MvcProduct
 {
     public class Program
     {
@@ -21,7 +21,7 @@ namespace MvcMovie
 
                 try
                 {
-                    var context = services.GetRequiredService<MvcMovieContext>();
+                    var context = services.GetRequiredService<MvcProductContext>();
                     context.Database.Migrate();
                     SeedData.Initialize(services);
                 }

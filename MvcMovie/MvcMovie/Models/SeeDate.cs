@@ -3,55 +3,55 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
 
-namespace MvcMovie.Models
+namespace MvcProduct.Models
 {
     public static class SeedData
     {
         public static void Initialize(IServiceProvider serviceProvider)
         {
-            using (var context = new MvcMovieContext(
-                serviceProvider.GetRequiredService<DbContextOptions<MvcMovieContext>>()))
+            using (var context = new MvcProductContext(
+                serviceProvider.GetRequiredService<DbContextOptions<MvcProductContext>>()))
             {
                 // Look for any movies.
-                if (context.Movies.Any())
+                if (context.Products.Any())
                 {
                     return;   // DB has been seeded
                 }
 
-                context.Movies.AddRange(
-                     new Movie
+                context.Products.AddRange(
+                     new Product
                      {
-                         Title = "When Harry Met Sally",
+                         Description = "When Harry Met Sally",
                          ReleaseDate = DateTime.Parse("1989-1-11"),
-                         Genre = "Romantic Comedy",
-                         Rating = "R",
+                         Type = "Romantic Comedy",
+                         Quality = "R",
                          Price = 7.99M
                      },
 
-                     new Movie
+                     new Product
                      {
-                         Title = "Ghostbusters ",
+                         Description = "Ghostbusters ",
                          ReleaseDate = DateTime.Parse("1984-3-13"),
-                         Genre = "Comedy",
-                         Rating = "R",
+                         Type = "Comedy",
+                         Quality = "R",
                          Price = 8.99M
                      },
 
-                     new Movie
+                     new Product
                      {
-                         Title = "Ghostbusters 2",
+                         Description = "Ghostbusters 2",
                          ReleaseDate = DateTime.Parse("1986-2-23"),
-                         Genre = "Comedy",
-                         Rating = "R",
+                         Type = "Comedy",
+                         Quality = "R",
                          Price = 9.99M
                      },
 
-                   new Movie
+                   new Product
                    {
-                       Title = "Rio Bravo",
+                       Description = "Rio Bravo",
                        ReleaseDate = DateTime.Parse("1959-4-15"),
-                       Genre = "Western",
-                       Rating = "R",
+                       Type = "Western",
+                       Quality = "R",
                        Price = 3.99M
                    }
                 );

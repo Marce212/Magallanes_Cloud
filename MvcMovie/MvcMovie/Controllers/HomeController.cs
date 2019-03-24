@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using MvcMovie.Models;
+using MvcProduct.Models;
 
-namespace MvcMovie.Controllers
+namespace MvcProduct.Controllers
 {
     public class HomeController : Controller
     {
@@ -24,7 +24,7 @@ namespace MvcMovie.Controllers
 
             return View();
         }
-        public IActionResult Admin()
+        public IActionResult ABMProducts()
         {
             ViewData["Message"] = "Ingrese producto";
 

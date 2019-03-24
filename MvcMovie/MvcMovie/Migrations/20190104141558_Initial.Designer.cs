@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MvcMovie.Models;
+using MvcProduct.Models;
 
-namespace MvcMovie.Migrations
+namespace MvcProduct.Migrations
 {
-    [DbContext(typeof(MvcMovieContext))]
+    [DbContext(typeof(MvcProductContext))]
     [Migration("20190104141558_Initial")]
     partial class Initial
     {

@@ -10,9 +10,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using MvcMovie.Models;
+using MvcProduct.Models;
 
-namespace MvcMovie
+namespace MvcProduct
 {
     public class Startup
     {
@@ -36,8 +36,8 @@ namespace MvcMovie
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<MvcMovieContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
+            services.AddDbContext<MvcProductContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MvcProductContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

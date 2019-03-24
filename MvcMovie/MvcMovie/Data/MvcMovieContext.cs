@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using MvcMovie.Models;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace MvcMovie.Models
+namespace MvcProduct.Models
 {
-    public class MvcMovieContext : DbContext
+    public class MvcProductContext : DbContext
     {
-        public MvcMovieContext (DbContextOptions<MvcMovieContext> options)
+        public MvcProductContext (DbContextOptions<MvcProductContext> options)
             : base(options)
         {
         }
 
-        public DbSet<MvcMovie.Models.Movie> Movies { get; set; }
+        public DbSet<MvcProduct.Models.Product> Products { get; set; }
     }
 }
