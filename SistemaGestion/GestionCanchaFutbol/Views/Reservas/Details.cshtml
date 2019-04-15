@@ -1,0 +1,54 @@
+﻿@model GestionCanchaFutbol.Models.Reserva
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reserva</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cancha)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cancha)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PagoParcial)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PagoParcial)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cliente)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contacto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contacto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DiaReserva)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiaReserva)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
